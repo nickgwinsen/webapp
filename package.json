@@ -4,7 +4,12 @@
   "description": "web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "npm install --prefix client",
+    "server-install": "npm install --prefix server",
+    "install-all": "concurrently \"npm install\" \"npm run server-install\" \"npm run client-install\"",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/nickgwinsen/webapp/issues"
   },
-  "homepage": "https://github.com/nickgwinsen/webapp#readme"
+  "homepage": "https://github.com/nickgwinsen/webapp#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
 }
