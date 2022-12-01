@@ -1,0 +1,36 @@
+
+creating express server
+npm install express cross origin request (cors) dotenv mongoose mongodb
+these will be dependencies
+req can hold parameters and you can send a response
+everytime you make a new component - 
+first make the file (.jsx)
+open the file
+type rafce (react arrow function component export) and autofill off of the snippet
+more experience.. create a navbar
+
+homework:
+look up fetch and make a get request to a certain url
+fetch "http://localhost:8000/study"
+.then((response)=>{response as parameter}
+})
+store in study route and get the same message in console of browser and the server 
+
+npm run client - starts client
+npm run server - starts server
+
+console.table(response) prints things as a table in fetch
+fetch (server site)
+
+fetch("http://localhost:8000/study")
+      .then(data => data.json())
+      .then(response => {
+        console.table(response)
+      })
+
+      
+
+//navbar
+https://blog.logrocket.com/creating-navbar-react/
+
+rafce = fast arrow function builder for react (client side)
