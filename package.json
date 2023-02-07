@@ -23,6 +23,7 @@
   "homepage": "https://github.com/nickgwinsen/webapp#readme",
   "dependencies": {
     "concurrently": "^7.5.0",
-    "react-router-dom": "^6.4.3"
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "^5.0.1"
   }
 }
