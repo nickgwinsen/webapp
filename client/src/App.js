@@ -1,6 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Switch } from "react-router";
+import { BrowserRouter as Router, Route, Routes } from "react-router";
 import Home from './Components/Home';
 import NavBar from './Components/NavBar';
 import Profile from "./pages/Profile"
@@ -10,21 +9,26 @@ import Login from "./pages/Login"
 
 function App() {
   return (
-    <Router>
 
-      <div className="App">
-        <NavBar />
-        <Switch>
-          <Route path='/login' component={Login} />
-          <Route path='/register' component={Register} />
-          <Route path='/profile' component={Profile} />
+    <div>
+      <Home> Hello </Home>
+      <router>
+        <layout>
+          <Routes>
+            <Route exact path='/login' element={<Login />} />
+            <Route exact path='/register' element={<Register />} />
+            <Route exact path='/profile' element={<Profile />} />
 
-        </Switch>
-        <Home />
+          </Routes>
+        </layout>
+      </router>
+    </div>
 
 
-      </div>
-    </Router>
+
+
+
+
   );
 }
 
