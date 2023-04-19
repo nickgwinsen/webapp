@@ -1,7 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router";
-import Home from './Components/Home';
-import NavBar from './Components/NavBar';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Components/Home";
 import Profile from "./pages/Profile"
 import Register from "./pages/Register"
 import Login from "./pages/Login"
@@ -9,9 +8,8 @@ import Login from "./pages/Login"
 
 function App() {
   return (
-
     <div>
-      <Home> Hello </Home>
+      <h1>Hello</h1>
       <router>
         <layout>
           <Routes>
@@ -23,11 +21,6 @@ function App() {
         </layout>
       </router>
     </div>
-
-
-
-
-
 
   );
 }
