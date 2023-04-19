@@ -34,3 +34,18 @@ fetch("http://localhost:8000/study")
 https://blog.logrocket.com/creating-navbar-react/
 
 rafce = fast arrow function builder for react (client side)
+
+
+<div>
+      <h1>Hello</h1>
+      <router>
+        <layout>
+          <Routes>
+            <Route exact path='/login' element={<Login />} />
+            <Route exact path='/register' element={<Register />} />
+            <Route exact path='/profile' element={<Profile />} />
+
+          </Routes>
+        </layout>
+      </router>
+    </div>
